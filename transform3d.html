@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 3D</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            /* justify-content: space-evenly; */
+            position: relative;
+        }
+
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .container div:nth-of-type(1)
+        {
+            transform:skewY(40deg);
+            position: absolute;
+            right: 100px;
+            top: 220px;
+            z-index: 2;
+            background-color: brown;
+        }
+
+
+        .container div:nth-of-type(2)
+        {
+            position: absolute;
+            right: 100px;
+            top: 262px;
+            z-index: 4;
+            width: 132px;
+        }
+
+        .container div:nth-of-type(4)
+        {
+            position: absolute;
+            right: 200px;
+            top: 178px;
+            z-index: 1;
+            width: 132px;
+        }
+
+
+        .container div:nth-of-type(3)
+        {
+            transform:skewY(40deg);
+            position: absolute;
+            right: 232px;
+            top: 220px;
+            z-index: 2;
+            background-color: brown;
+
+        }
+
+        span {
+            display: inline-block;
+            background-color: green;
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 1px 2px rgba(128, 128, 128, 0.363);
+            margin: 10px;
+        }
+
+        section {
+            width: 30%;
+            height: 200px;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            align-content: flex-end;
+            align-items: flex-end;
+        }
+
+
+        span:nth-of-type(4)
+        {
+            position: absolute;
+            bottom: 200px;
+            right: -50px;
+            z-index: 5;
+        }
+
+        span:nth-of-type(3)
+        {
+            position: absolute;
+            bottom: 100px;
+            z-index: 5;
+        }
+
+        span:nth-of-type(2)
+        {
+            position: absolute;
+            bottom: 120px;
+            right: -100px;
+            z-index: 5;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    
+        <section>
+    
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+    </div>
+  
+</body>
+</html>
